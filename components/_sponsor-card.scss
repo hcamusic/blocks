@@ -1,0 +1,32 @@
+.sponsor-card {
+  &:hover {
+    text-decoration: none;
+
+    .card-body {
+      opacity: 0.7;
+    }
+  }
+
+  .card {
+    height: 100%;
+
+    &-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 7em;
+
+      &-top {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+
+    &-body {
+      background: #4b2c5a;
+      color: #ffffff;
+    }
+  }
+}
