@@ -30,7 +30,7 @@ const CardImg = styled(Box)`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 7em;
+  height: 10em;
 `;
 
 const Img = styled.img`
