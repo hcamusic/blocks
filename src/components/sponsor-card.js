@@ -1,22 +1,27 @@
 import React from 'react';
-import { Box, Flex, Card } from 'rebass/styled-components';
+import { Box } from 'rebass/styled-components';
 import styled from 'styled-components';
-import './_sponsor-card.scss';
 
 const TitleBox = styled(Box)`
-  height: 100%;
   width: 100%;
   background: #4b2c5a;
+  flex-grow: 1;
+`;
+
+const Card = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 `;
 
 const CardLink = styled.a`
   &:hover {
     text-decoration: none;
 
-    ${TitleBox}: {
-      //TODO: This doesn't work
+    ${Card} {
       opacity: 0.7;
-    };
+    }
   }
 `;
 
@@ -41,9 +46,9 @@ const Title = styled(Box)`
 function SponsorCard({ title, website, img }) {
   return (
     <CardLink href={website}>
-      <Card mb={3} px={3}>
+      <Card>
         {img ? (
-          <CardImg p={3}>
+          <CardImg px={1} py={2} bg={img.bg}>
             <Img src={img.src} alt={img.alt} />
           </CardImg>
         ) : null}

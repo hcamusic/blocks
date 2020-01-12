@@ -34,19 +34,21 @@ const sponsorList = {
       },
     },
     {
-      title: 'Huston Law Firm, PLLC',
-      website: 'https://www.hustonlawfirm.com/',
-      // img: {
-      //   src: "",
-      //   alt: ""
-      // }
+      title: 'Huston Law Firm',
+      website: 'https://www.carolinaestatecounsel.com/',
+      img: {
+        src:
+          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/CarolinaEstateCounsel.png',
+        alt: '',
+        bg: 'rgb(38, 65, 148)',
+      },
     },
     {
       title: 'Allenton Management',
       website: 'https://allenton.com/',
       img: {
         src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/AllentonMgt.png',
+          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/AllentonMgt.jpg',
         alt: '',
       },
     },
@@ -114,12 +116,12 @@ function SponsorBlock() {
     <>
       {Object.entries(sponsorList).map(([level, sponsors]) => (
         <>
-          <Box my={4} key={level}>
+          <Box my={4} ml={3} key={level}>
             <h3>{level}</h3>
           </Box>
           <Flex flexWrap="wrap">
             {sponsors.map(sponsor => (
-              <Box width={[1 / 3]} key={sponsor.title}>
+              <Box width={[1, 1 / 2, 1 / 3]} key={sponsor.title} pb={4} px={3}>
                 <SponsorCard {...sponsor} />
               </Box>
             ))}
