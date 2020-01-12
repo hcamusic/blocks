@@ -1,6 +1,6 @@
 import react from 'react';
 import SponsorCard from '../components/sponsor-card';
-import { Flex, Box } from 'rebass/styled-components';
+import { Flex, Box, Text } from 'rebass/styled-components';
 
 const sponsorList = {
   'Platinum Sponsors': [
@@ -117,7 +117,7 @@ function SponsorBlock() {
       {Object.entries(sponsorList).map(([level, sponsors]) => (
         <>
           <Box my={4} ml={3} key={level}>
-            <h3>{level}</h3>
+            <h2>{level}</h2>
           </Box>
           <Flex flexWrap="wrap">
             {sponsors.map(sponsor => (

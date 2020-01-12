@@ -8,7 +8,8 @@
   "scripts": {
     "start": "next",
     "prettier": "prettier \"**/*.{js,json,css,md}\" --write",
-    "build": "next build"
+    "clean": "rm -rf .next blocks out",
+    "build": "yarn clean && next build && next export && node ./scripts/extract.js"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -22,6 +23,8 @@
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fs-extra": "^8.1.0",
     "husky": "^3.1.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1"

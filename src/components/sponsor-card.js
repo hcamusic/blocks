@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box } from 'rebass/styled-components';
+import { space } from 'styled-system';
+import { Box, Text } from 'rebass/styled-components';
 import styled from 'styled-components';
 
 const TitleBox = styled(Box)`
@@ -16,12 +17,12 @@ const Card = styled(Box)`
 `;
 
 const CardLink = styled.a`
-  &:hover {
-    text-decoration: none;
+  text-decoration: underline;
+  color: white;
 
-    ${Card} {
-      opacity: 0.7;
-    }
+  &:hover {
+    color: white;
+    opacity: 0.7;
   }
 `;
 
@@ -39,26 +40,20 @@ const Img = styled.img`
   height: auto;
 `;
 
-const Title = styled(Box)`
-  color: white;
-`;
-
 function SponsorCard({ title, website, img }) {
   return (
-    <CardLink href={website}>
-      <Card>
-        {img ? (
-          <CardImg px={1} py={2} bg={img.bg}>
-            <Img src={img.src} alt={img.alt} />
-          </CardImg>
-        ) : null}
-        <TitleBox>
-          <Title px={3} py={4}>
-            {title}
-          </Title>
-        </TitleBox>
-      </Card>
-    </CardLink>
+    <Card>
+      {img ? (
+        <CardImg px={1} py={2} bg={img.bg}>
+          <Img src={img.src} alt={img.alt} />
+        </CardImg>
+      ) : null}
+      <TitleBox>
+        <Text py={3} px={3} fontSize={2}>
+          <CardLink href={website}>{title}</CardLink>
+        </Text>
+      </TitleBox>
+    </Card>
   );
 }
 
