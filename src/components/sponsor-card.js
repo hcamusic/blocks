@@ -26,6 +26,10 @@ const CardLink = styled.a`
   }
 `;
 
+const CardTitle = styled.p`
+  color: white;
+`;
+
 const CardImg = styled(Box)`
   display: flex;
   justify-content: center;
@@ -50,7 +54,11 @@ function SponsorCard({ title, website, img }) {
       ) : null}
       <TitleBox>
         <Text py={3} px={3} fontSize={2}>
-          <CardLink href={website}>{title}</CardLink>
+          {website ? (
+            <CardLink href={website}>{title}</CardLink>
+          ) : (
+            <CardTitle>{title}</CardTitle>
+          )}
         </Text>
       </TitleBox>
     </Card>

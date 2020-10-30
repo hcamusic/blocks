@@ -5,11 +5,17 @@ import { Flex, Box, Text } from 'rebass/styled-components';
 const sponsorList = {
   'Platinum Sponsors': [
     {
+      title: 'EOMC - Our goal is to keep your employees healthy and productive',
+      img: {
+        src: 'https://hcamusic.org/images/eomc-logo.png',
+        alt: '',
+      },
+    },
+    {
       title: 'Doc Adams Music',
       website: 'http://www.docadamsmusic.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/DocAdamsMusic.jpg',
+        src: 'https://hcamusic.org/images/DocAdamsMusic.jpg',
         alt: '',
       },
     },
@@ -19,8 +25,7 @@ const sponsorList = {
       title: 'Rosewood Wealth Management',
       website: 'https://rosewoodwealthmanagement.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/RosewoodWealthMgt.jpg',
+        src: 'https://hcamusic.org/images/RosewoodWealthMgt.jpg',
         alt: '',
       },
     },
@@ -28,8 +33,7 @@ const sponsorList = {
       title: 'MyBrainDr',
       website: 'https://mybraindr.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/MyBrainDr.jpg',
+        src: 'https://hcamusic.org/images/MyBrainDr.jpg',
         alt: '',
       },
     },
@@ -37,8 +41,7 @@ const sponsorList = {
       title: 'Huston Law Firm',
       website: 'https://www.carolinaestatecounsel.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/CarolinaEstateCounsel.png',
+        src: 'https://hcamusic.org/images/CarolinaEstateCounsel.png',
         alt: '',
         bg: 'rgb(38, 65, 148)',
       },
@@ -47,8 +50,7 @@ const sponsorList = {
       title: 'Allenton Management',
       website: 'https://allenton.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/AllentonMgt.jpg',
+        src: 'https://hcamusic.org/images/AllentonMgt.jpg',
         alt: '',
       },
     },
@@ -56,8 +58,7 @@ const sponsorList = {
       title: 'Aluminum Company of NC',
       website: 'https://www.aluminumcompany.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/AluminumCompany.jpg',
+        src: 'https://hcamusic.org/images/AluminumCompany.jpg',
         alt: '',
       },
     },
@@ -65,8 +66,7 @@ const sponsorList = {
       title: 'Adams Chetwood Wealth Management Group',
       website: 'https://adamschetwood.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/AdamsChetwoodWealthMgt.png',
+        src: 'https://hcamusic.org/images/AdamsChetwoodWealthMgt.png',
         alt: '',
       },
     },
@@ -76,8 +76,7 @@ const sponsorList = {
       title: 'Susanne Jackson Dentistry',
       website: 'https://susannejacksondds.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/SusanneJacksonDentistry.svg',
+        src: 'https://hcamusic.org/images/SusanneJacksonDentistry.png',
         alt: '',
       },
     },
@@ -85,8 +84,7 @@ const sponsorList = {
       title: 'Raleigh Dental Excellence',
       website: 'https://www.raleighdentalexcellence.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/RaleighDentalExcellence.png',
+        src: 'https://hcamusic.org/images/RaleighDentalExcellence.png',
         alt: '',
       },
     },
@@ -94,8 +92,7 @@ const sponsorList = {
       title: 'Triangle Restoration Dentistry',
       website: 'https://www.trianglerestorationdentistry.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/TriangleRestorationDentistry.webp',
+        src: 'https://hcamusic.org/images/TriangleRestorationDentistry.png',
         alt: '',
       },
     },
@@ -103,8 +100,7 @@ const sponsorList = {
       title: 'Walker Auto and Truck',
       website: 'https://www.walkerautostores.com/',
       img: {
-        src:
-          'https://hcamusic.org/sites/hcamusic.org/files/img_sponsors/WalkerAutoTruck.png',
+        src: 'https://hcamusic.org/images/WalkerAutoTruck.png',
         alt: '',
       },
     },
